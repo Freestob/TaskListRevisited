@@ -9,7 +9,7 @@ using System.Data.Entity;
 
 namespace TaskList.Data
 {
-    class TaskListRevisitedContext : DbContext
+    public class TaskListRevisitedContext : DbContext
     {
         public TaskListRevisitedContext(): base("TaskList")
         {

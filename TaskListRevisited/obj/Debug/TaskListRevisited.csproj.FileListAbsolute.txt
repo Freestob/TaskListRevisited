@@ -89,3 +89,12 @@ c:\users\frees\source\repos\TaskListRevisited\TaskListRevisited\obj\Debug\TaskLi
 c:\users\frees\source\repos\TaskListRevisited\TaskListRevisited\obj\Debug\TaskListRevisited.csproj.CopyComplete
 c:\users\frees\source\repos\TaskListRevisited\TaskListRevisited\obj\Debug\TaskListRevisited.dll
 c:\users\frees\source\repos\TaskListRevisited\TaskListRevisited\obj\Debug\TaskListRevisited.pdb
+C:\Users\frees\source\repos\TaskListRevisited\TaskListRevisited\bin\EntityFramework.dll
+C:\Users\frees\source\repos\TaskListRevisited\TaskListRevisited\bin\EntityFramework.SqlServer.dll
+C:\Users\frees\source\repos\TaskListRevisited\TaskListRevisited\bin\TaskList.Data.dll
+C:\Users\frees\source\repos\TaskListRevisited\TaskListRevisited\bin\TaskList.Domain.dll
+C:\Users\frees\source\repos\TaskListRevisited\TaskListRevisited\bin\TaskList.Data.pdb
+C:\Users\frees\source\repos\TaskListRevisited\TaskListRevisited\bin\TaskList.Data.dll.config
+C:\Users\frees\source\repos\TaskListRevisited\TaskListRevisited\bin\TaskList.Domain.pdb
+C:\Users\frees\source\repos\TaskListRevisited\TaskListRevisited\bin\EntityFramework.xml
+C:\Users\frees\source\repos\TaskListRevisited\TaskListRevisited\bin\EntityFramework.SqlServer.xml

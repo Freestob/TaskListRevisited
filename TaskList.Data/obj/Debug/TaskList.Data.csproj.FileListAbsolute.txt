@@ -1,0 +1,14 @@
+C:\Users\frees\source\repos\TaskListRevisited\TaskList.Data\bin\Debug\TaskList.Data.dll.config
+C:\Users\frees\source\repos\TaskListRevisited\TaskList.Data\bin\Debug\TaskList.Data.dll
+C:\Users\frees\source\repos\TaskListRevisited\TaskList.Data\bin\Debug\TaskList.Data.pdb
+C:\Users\frees\source\repos\TaskListRevisited\TaskList.Data\bin\Debug\EntityFramework.dll
+C:\Users\frees\source\repos\TaskListRevisited\TaskList.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\frees\source\repos\TaskListRevisited\TaskList.Data\bin\Debug\TaskList.Domain.dll
+C:\Users\frees\source\repos\TaskListRevisited\TaskList.Data\bin\Debug\TaskList.Domain.pdb
+C:\Users\frees\source\repos\TaskListRevisited\TaskList.Data\bin\Debug\EntityFramework.xml
+C:\Users\frees\source\repos\TaskListRevisited\TaskList.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\frees\source\repos\TaskListRevisited\TaskList.Data\obj\Debug\TaskList.Data.csprojAssemblyReference.cache
+C:\Users\frees\source\repos\TaskListRevisited\TaskList.Data\obj\Debug\TaskList.Data.csproj.CoreCompileInputs.cache
+C:\Users\frees\source\repos\TaskListRevisited\TaskList.Data\obj\Debug\TaskList.Data.csproj.CopyComplete
+C:\Users\frees\source\repos\TaskListRevisited\TaskList.Data\obj\Debug\TaskList.Data.dll
+C:\Users\frees\source\repos\TaskListRevisited\TaskList.Data\obj\Debug\TaskList.Data.pdb

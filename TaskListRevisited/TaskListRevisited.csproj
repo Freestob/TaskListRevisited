@@ -154,6 +154,8 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ToDoesController.cs" />
+    <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -198,6 +200,16 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Users\Create.cshtml" />
+    <Content Include="Views\Users\Delete.cshtml" />
+    <Content Include="Views\Users\Details.cshtml" />
+    <Content Include="Views\Users\Edit.cshtml" />
+    <Content Include="Views\Users\Index.cshtml" />
+    <Content Include="Views\ToDoes\Create.cshtml" />
+    <Content Include="Views\ToDoes\Delete.cshtml" />
+    <Content Include="Views\ToDoes\Details.cshtml" />
+    <Content Include="Views\ToDoes\Edit.cshtml" />
+    <Content Include="Views\ToDoes\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -215,6 +227,16 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TaskList.Data\TaskList.Data.csproj">
+      <Project>{4bd2d821-938c-4d1b-8e80-77d3e728f751}</Project>
+      <Name>TaskList.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TaskList.Domain\TaskList.Domain.csproj">
+      <Project>{544f59ba-e148-4063-833e-47193409c848}</Project>
+      <Name>TaskList.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

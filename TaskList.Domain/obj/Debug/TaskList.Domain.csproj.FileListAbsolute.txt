@@ -1,0 +1,6 @@
+C:\Users\frees\source\repos\TaskListRevisited\TaskList.Domain\bin\Debug\TaskList.Domain.dll
+C:\Users\frees\source\repos\TaskListRevisited\TaskList.Domain\bin\Debug\TaskList.Domain.pdb
+C:\Users\frees\source\repos\TaskListRevisited\TaskList.Domain\obj\Debug\TaskList.Domain.csprojAssemblyReference.cache
+C:\Users\frees\source\repos\TaskListRevisited\TaskList.Domain\obj\Debug\TaskList.Domain.csproj.CoreCompileInputs.cache
+C:\Users\frees\source\repos\TaskListRevisited\TaskList.Domain\obj\Debug\TaskList.Domain.dll
+C:\Users\frees\source\repos\TaskListRevisited\TaskList.Domain\obj\Debug\TaskList.Domain.pdb
