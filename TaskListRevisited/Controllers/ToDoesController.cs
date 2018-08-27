@@ -18,12 +18,12 @@ namespace TaskListRevisited.Controllers
         // GET: ToDoes
         public ActionResult Index()
         {
-          /*  HttpCookie userId = Request.Cookies["UserId"];
+           /* HttpCookie userId = Request.Cookies["UserId"];
             var id = int.Parse(userId.Value);
             var tasks = db.Users.Include(t => t.UserName);
             var userTasks = db.ToDos.Where(task => task.UserId == id);*/
 
-            return View(/*userTasks*/);
+            return View(db.ToDos.ToList());
         }
 
             // GET: ToDoes/Details/5
@@ -53,7 +53,7 @@ namespace TaskListRevisited.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,UserId,TaskName,TaskDescription,DueDate,IsComplete")] ToDo toDo)
+        public ActionResult Create([Bind(Include = "Id,TaskName,TaskDescription,DueDate,IsComplete")] ToDo toDo)
         {
             if (ModelState.IsValid)
             {
