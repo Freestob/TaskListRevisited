@@ -18,12 +18,12 @@ namespace TaskListRevisited.Controllers
         // GET: ToDoes
         public ActionResult Index()
         {
-            HttpCookie userId = Request.Cookies["UserId"];
+          /*  HttpCookie userId = Request.Cookies["UserId"];
             var id = int.Parse(userId.Value);
             var tasks = db.Users.Include(t => t.UserName);
-            var userTasks = db.ToDos.Where(task => task.UserId == id);
+            var userTasks = db.ToDos.Where(task => task.UserId == id);*/
 
-            return View(userTasks);
+            return View(/*userTasks*/);
         }
 
             // GET: ToDoes/Details/5
