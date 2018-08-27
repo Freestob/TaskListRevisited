@@ -23,13 +23,11 @@ namespace TaskListRevisited.Controllers
             var tasks = db.Users.Include(t => t.UserName);
             var userTasks = db.ToDos.Where(task => task.UserId == id);
 
-            
-
             return View(userTasks);
         }
 
-        // GET: ToDoes/Details/5
-        public ActionResult Details(int? id)
+            // GET: ToDoes/Details/5
+            public ActionResult Details(int? id)
         {
             if (id == null)
             {
@@ -46,8 +44,7 @@ namespace TaskListRevisited.Controllers
         // GET: ToDoes/Create
         public ActionResult Create()
         {
-            HttpCookie userId = Request.Cookies["UserId"];
-            
+            ViewBag.UserId = new SelectList(db.Users, "Id", "UserName");
             return View();
         }
 
@@ -56,7 +53,7 @@ namespace TaskListRevisited.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,TaskName,TaskDescription,DueDate,IsComplete")] ToDo toDo)
+        public ActionResult Create([Bind(Include = "Id,UserId,TaskName,TaskDescription,DueDate,IsComplete")] ToDo toDo)
         {
             if (ModelState.IsValid)
             {
@@ -65,6 +62,7 @@ namespace TaskListRevisited.Controllers
                 return RedirectToAction("Index");
             }
 
+            ViewBag.UserId = new SelectList(db.Users, "Id", "UserName", toDo.UserId);
             return View(toDo);
         }
 
@@ -80,6 +78,7 @@ namespace TaskListRevisited.Controllers
             {
                 return HttpNotFound();
             }
+            ViewBag.UserId = new SelectList(db.Users, "Id", "UserName", toDo.UserId);
             return View(toDo);
         }
 
@@ -88,7 +87,7 @@ namespace TaskListRevisited.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,TaskName,TaskDescription,DueDate,IsComplete")] ToDo toDo)
+        public ActionResult Edit([Bind(Include = "Id,UserId,TaskName,TaskDescription,DueDate,IsComplete")] ToDo toDo)
         {
             if (ModelState.IsValid)
             {
@@ -96,6 +95,7 @@ namespace TaskListRevisited.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
+            ViewBag.UserId = new SelectList(db.Users, "Id", "UserName", toDo.UserId);
             return View(toDo);
         }
 
