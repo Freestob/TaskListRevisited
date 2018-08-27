@@ -9,7 +9,7 @@ using TaskList.Domain.Models;
 
 namespace TaskList.Data
 {
-    class TaskListRevisitedInitializer :CreateDatabaseIfNotExists<TaskListRevisitedContext>
+    class TaskListRevisitedInitializer :DropCreateDatabaseIfModelChanges<TaskListRevisitedContext>
     {
         protected override void Seed(TaskListRevisitedContext context)
         {
