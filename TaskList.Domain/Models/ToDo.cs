@@ -10,6 +10,8 @@ namespace TaskList.Domain.Models
     public class ToDo
     {
         public int Id { get; set; }
+        public int UserId { get; set; }
+        public virtual User User { get; set; }
         public string TaskName { get; set; }
         public string TaskDescription { get; set; }
         public DateTime DueDate { get; set; }

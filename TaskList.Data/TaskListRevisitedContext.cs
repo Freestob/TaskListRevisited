@@ -16,11 +16,11 @@ namespace TaskList.Data
             //Drop the database and recreate on each run
             //Database.SetInitializer(new DropCreateDatabaseAlways<GrandCircusLmsContext>());
             // Create the DB if it doesn't exist.  
-            //Database.SetInitializer(new CreateDatabaseIfNotExists<GrandCircusLmsContext>());
+            Database.SetInitializer(new CreateDatabaseIfNotExists<TaskListRevisitedContext>());
             //Will Drop and recreate if model changes.
-            //Database.SetInitializer(new DropCreateDatabaseIfModelChanges<GrandCircusLmsContext>());
+            //Database.SetInitializer(new DropCreateDatabaseIfModelChanges<TaskListRevisitedContext>());
             //Custom Initializer
-            Database.SetInitializer(new TaskListRevisitedInitializer());
+            //Database.SetInitializer(new TaskListRevisitedInitializer());
         }
 
         public DbSet<ToDo> ToDos { get; set; }

@@ -53,7 +53,7 @@ namespace TaskListRevisited.Controllers
             {
                 db.Users.Add(user);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Create", "ToDoes");
             }
 
             return View(user);

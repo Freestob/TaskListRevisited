@@ -16,6 +16,9 @@ namespace TaskList.Data.Maps
             HasKey(x => x.Id);
             Property(x => x.Id)
                 .HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
+            HasMany(x => x.ToDos)
+                .WithRequired(x => x.User)
+                .HasForeignKey(x => x.UserId);
             Property(x => x.UserName)
                 .HasMaxLength(20)
                 .IsRequired();
@@ -24,6 +27,7 @@ namespace TaskList.Data.Maps
             Property(x => x.Password)
                 .HasMaxLength(7)
                 .IsRequired();
+            
         }
     }
 }

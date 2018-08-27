@@ -18,7 +18,14 @@ namespace TaskListRevisited.Controllers
         // GET: ToDoes
         public ActionResult Index()
         {
-            return View(db.ToDos.ToList());
+            HttpCookie userId = Request.Cookies["UserId"];
+            var id = int.Parse(userId.Value);
+            var tasks = db.Users.Include(t => t.UserName);
+            var userTasks = db.ToDos.Where(task => task.UserId == id);
+
+            
+
+            return View(userTasks);
         }
 
         // GET: ToDoes/Details/5
@@ -39,6 +46,8 @@ namespace TaskListRevisited.Controllers
         // GET: ToDoes/Create
         public ActionResult Create()
         {
+            HttpCookie userId = Request.Cookies["UserId"];
+            
             return View();
         }
 
